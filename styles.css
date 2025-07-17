@@ -1,0 +1,35 @@
+
+body{
+  display: flex;
+  border: 3px solid blue;
+  height: auto px;
+  flex-direction: column;
+}
+
+.ask{
+
+  width: 400px;
+  margin-left: 250px;
+  background-color: #06a2daf9;
+  color: rgba(240, 248, 255, 0.888);
+
+
+
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  border: 3px solid black;
+  height:1000px;
+  width:1000px;
+  flex-wrap: wrap;
+
+}
+
+.gridsquare{
+  
+  box-sizing: border-box;
+  border: 1px solid black;
+  
+
+}

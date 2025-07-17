@@ -12,6 +12,28 @@
 
 
 <body>
+  <button class="ask">Change grid!</button>
+  <div class="container">
+
+  </div>
   
+  <script>
+    const container=document.querySelector(".container")
+    function creategrid(size){
+      const squaresize= 1000/size;
+      
+    for (let i= 0; i < size*size; i++) {
+     const gridsquare=document.createElement("div")
+     gridsquare.classList.add("gridsquare")
+     gridsquare.style.width= `${squaresize}px`;
+     gridsquare.style.height= `${squaresize}px`;
+     container.appendChild(gridsquare)
+     }
+    }
+    
+    creategrid(16);
+   
+
+  </script>
 </body>
 </html>
