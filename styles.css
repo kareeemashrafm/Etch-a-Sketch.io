@@ -1,35 +1,43 @@
 
 body{
   display: flex;
-  border: 3px solid blue;
+  background-color: rgb(159, 216, 238);
   height: auto px;
   flex-direction: column;
 }
 
+
 .ask{
 
-  width: 400px;
-  margin-left: 250px;
-  background-color: #06a2daf9;
-  color: rgba(240, 248, 255, 0.888);
-
+  width: 300px;
+  height:100px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background-color: #3882f6;
+  color: rgba(240, 248, 255, 0.952);
+  font-size: 25px;
 
 
 }
+
 .container{
   display: flex;
   flex-wrap: wrap;
-  border: 3px solid black;
+  border: 3px solid rgb(0, 0, 0);
   height:1000px;
   width:1000px;
   flex-wrap: wrap;
+  margin: auto;
+  
+  
 
 }
 
 .gridsquare{
   
   box-sizing: border-box;
-  border: 1px solid black;
+  border: 1px solid rgb(0, 0, 0);
   
-
 }

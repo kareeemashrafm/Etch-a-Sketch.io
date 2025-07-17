@@ -20,6 +20,8 @@
   <script>
     const container=document.querySelector(".container")
     function creategrid(size){
+
+      container.innerHTML="";
       const squaresize= 1000/size;
       
     for (let i= 0; i < size*size; i++) {
@@ -28,9 +30,31 @@
      gridsquare.style.width= `${squaresize}px`;
      gridsquare.style.height= `${squaresize}px`;
      container.appendChild(gridsquare)
-     }
-    }
+      gridsquare.addEventListener("mouseenter",colorgrid)
+     
+     function colorgrid(){
+
+      gridsquare.style.backgroundColor= "#000000";
+
+       } 
+         }
+           }
     
+    const ask=document.querySelector(".ask");
+
+
+    ask.addEventListener("click",changegrid)
+    
+    function changegrid(){
+     const size= prompt("What size grid do u want: (Min is 10, Max is 100)");
+
+     if (size>=10 && size<=100)
+     {creategrid(size);}
+     else
+     {alert("Please enter between 10 and 100!")}
+
+    }
+
     creategrid(16);
    
 
